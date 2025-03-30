@@ -1,0 +1,23 @@
+#creamos una informacion ficticia y ala variable la llamamos informacion_personal 
+informacion_personal = {
+    "nombre": "Luis Gomez",
+    "edad": 45,
+    "ciudad": "Lago Agrio",
+    "profesion": "Economista"
+}
+
+#accedemos a la variable para  modificar el valor de ciudad  que se encuentra en el diccionario
+informacion_personal["ciudad"] = "Guayaqui"
+
+# accedemos a la variable para  modificar el valor de la profeccion que esta en  diccionario
+informacion_personal["profesion"] = "Ingeniero ambiental"
+
+# Verificamos si ay algun valor con numero si no existe lo agregamos
+if "telefono" not in informacion_personal:
+    informacion_personal["telefono"] = "+593 981546411"
+
+# Eliminamos la informacin de edad
+del informacion_personal["edad"]
+
+# Hacemos que imprimalos valores agregrados
+print(informacion_personal)
