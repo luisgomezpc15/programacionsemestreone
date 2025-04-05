@@ -1,0 +1,18 @@
+# Crearmos y Escribimos en el archivo my_notes.txt
+with open("my_notes.txt", "w") as file:
+    # Escribimos la primera línea de notas en el archivo
+    file.write("Esta es mi primera nota personal.\n")
+    # Escribimos la segunda línea de notas en el archivo
+    file.write("Aqui esta mi segunda nota.\n")
+    # Escribimos la tercera línea de notas en el archivo
+    file.write("Y esta es mi tercera nota.\n")
+
+# Ahora leemos el contenido del archivo my_notes.txt
+with open("my_notes.txt", "r") as file:
+    # Leer la primera línea del archivo
+    line = file.readline()
+    while line:
+        # Imprimir la línea actual en la consola
+        print(line.strip())
+        # Leer la siguiente línea del archivo y almacenarla en la variable "line"
+        line = file.readline()
